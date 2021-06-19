@@ -1,0 +1,61 @@
+/* custom styling */
+/*******************/
+body {
+    background: #222;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.6;
+}
+
+#wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+   font-size: 16px;
+}
+
+main h1 {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin: 17px 0 0 0;
+    border-bottom: 3px solid #FFC700;
+}
+
+main h2 {
+    display: block;
+    font-size: 22px;
+    font-weight: 200;
+    padding-bottom: 3px;
+    margin: 10px 0 20px 0;
+}
+
+main p {
+    display: block;
+}
+
+/*FORM CZ START*/
+div.fieldRow{
+    display:flex;
+    padding-bottom: 50px;
+}
+
+input.c_input{
+    width: 60%;
+    margin-left: 30px;
+}
+label.requiredField{
+     margin-left: 27%;
+}
+select.c_select{
+    width: 65%;
+}
+input.cc_input{
+ width: 75%;
+}
+
+

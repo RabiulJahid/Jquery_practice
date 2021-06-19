@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--LINK ADDED-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="countdown/css/jquerysctipttop.css" />
+        <!-- jQuery Classy Countdown CSS -->
+        <link rel="stylesheet" href="countdown/css/jquery.classycountdown.min.css" />
+
+        <link rel="stylesheet" href="assets/image-lightbox/example/demo-style.css" />
+        <title>cp-lightimg</title>
+
+        <style>
+            html,
+            * {
+                font-family: "Inter";
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #fafafa;
+                line-height: 1.6;
+            }
+            .lead {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+            .container {
+                margin: 50px auto;
+                max-width: 960px;
+            }
+            .cus_bg {
+                background-color: indigo;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--CP LIGNTING-->
+        <div class="container">
+            <h1 class="text-center text-danger">jQuery Image Lightbox Plugin Example</h1>
+            <div id="carbon-block"></div>
+            <div></div>
+            <p class="lead text-center text-primary">An image lightbox jQuery plugin that provides a Medium.com inspired, user-friendly Click To Zoom functionality on images within the document.</p>
+        </div>
+        <ul>
+            <li>
+                <img src="img/ami.jpg" alt="Empty bike racks outside a hotel" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg" alt="Heavy rain on an intersection" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg" alt="Payam Rajabi eating peanut chicken" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg" alt="Portland skyline sunset" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg" alt="Interior at Nong's" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05501_yirmq8.jpg" alt="A kimchi hotdog on a plate" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05624_f5b2ud.jpg" alt="Restaurant window with graffiti saying 'water'" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05623_dcpfva.jpg" alt="Portrait of Jeremy Tanner" />
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/ZgZWnqFemlA/600x450" alt="Jordan, Sarah and Sara on red bikes, waiting" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05581_ceocwv.jpg" alt="Barista wearing a hoodie saying 'Coffee Should Be Dope.'" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05517_ni2k0p.jpg" alt="Payam crossing the street on a bike" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05620_qfwycq.jpg" alt="Lit trees reflected in a puddle" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05462_b33uvp.jpg" alt="Moody chair in my hotel room" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05489_mqzktl.jpg" alt="Tom and Jenn wearing sunglasses" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05476_dlkjza.jpg" alt="Jordan and Sarah in front of a restaurant window" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05497_abbd3c.jpg" alt="Sarah reading the Double Dragon drink menu" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05487_fcdv7t.jpg" alt="Beer brewing equipment" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05493_q6njbk.jpg" alt="2 cocktails in the making" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05446_xj60ff.jpg" alt="Beverage fridge at Nong's" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05559_hu49zx.jpg" alt="Wood structure reflections" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05482_dtrj02.jpg" alt="Colorful garden equipment in a shop window" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05565_dx5rp6.jpg" alt="Sarah in front of a wooden wall" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05613_o9af2z.jpg" alt="A neon banana" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05469_fdxdzx.jpg" alt="Matt Sacks smiling while we're waiting for food" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05558_yq2tnz.jpg" alt="A fixed-gear bike under some bright lights" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05483_dyiuya.jpg" alt="Panic's PlayDate being held by a tester" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05468_xzbtcd.jpg" alt="Window reflection of me and Payam" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05457_nloycw.jpg" alt="Upside down shopping carts" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05522_mekpec.jpg" alt="Payam riding a bike with no hands" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05611_lbwtmk.jpg" alt="A kid's pillow left on the bench of a bus stop" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05572_xfvij7.jpg" alt="My reflection in the mirror" />
+            </li>
+            <li>
+                <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05481_gnljae.jpg" alt="Jordan holding an iced coffee against his head to cool down" />
+            </li>
+        </ul>
+        <!--CP LIGNTING-->
+
+        <!--ISOTOP START-->
+
+        <div class="container">
+            <h1 class="text-center text-danger bg-info">jQuery isotop</h1>
+        </div>
+        <div class="page--index">
+            <div class="big-demo" data-js="hero-demo">
+                <div class="ui-group">
+                    <h3 class="ui-group__title text-center text-danger">Filter</h3>
+                    <div class="filters button-group js-radio-button-group text-center">
+                        <button class="button is-checked" data-filter="*">show all</button>
+                        <button class="button" data-filter=".metal">metal</button>
+                        <button class="button" data-filter=".transition">transition</button>
+                        <button class="button" data-filter="ium">ium</button>
+                    </div>
+                </div>
+                <div class="ui-group">
+                    <h3 class="ui-group__title text-center text-success">Sort</h3>
+                    <div class="sort-by button-group js-radio-button-group text-center">
+                        <button class="button is-checked" data-sort-by="original-order">original order</button>
+                        <button class="button" data-sort-by="name">name</button>
+                        <button class="button" data-sort-by="symbol">symbol</button>
+                        <button class="button" data-sort-by="number">number</button>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="element-item transition metal" data-category="transition">
+                        <h5 class="name">Mercury</h5>
+                        <p class="symbol">Hg</p>
+                        <p class="number">80</p>
+                        <p class="weight">200.59</p>
+                    </div>
+                    <div class="element-item metalloid" data-category="metalloid">
+                        <h5 class="name">Tellurium</h5>
+                        <p class="symbol">Te</p>
+                        <p class="number">52</p>
+                        <p class="weight">127.6</p>
+                    </div>
+                    <div class="element-item post-transition metal" data-category="post-transition">
+                        <h5 class="name">Bismuth</h5>
+                        <p class="symbol">Bi</p>
+                        <p class="number">83</p>
+                        <p class="weight">208.980</p>
+                    </div>
+                    <div class="element-item post-transition metal" data-category="post-transition">
+                        <h5 class="name">Lead</h5>
+                        <p class="symbol">Pb</p>
+                        <p class="number">82</p>
+                        <p class="weight">207.2</p>
+                    </div>
+                    <div class="element-item transition metal" data-category="transition">
+                        <h5 class="name">Gold</h5>
+                        <p class="symbol">Au</p>
+                        <p class="number">79</p>
+                        <p class="weight">196.967</p>
+                    </div>
+                    <div class="element-item alkali metal" data-category="alkali">
+                        <h5 class="name">Potassium</h5>
+                        <p class="symbol">K</p>
+                        <p class="number">19</p>
+                        <p class="weight">39.0983</p>
+                    </div>
+                    <div class="element-item alkali metal" data-category="alkali">
+                        <h5 class="name">Sodium</h5>
+                        <p class="symbol">Na</p>
+                        <p class="number">11</p>
+                        <p class="weight">22.99</p>
+                    </div>
+                    <div class="element-item transition metal" data-category="transition">
+                        <h5 class="name">Cadmium</h5>
+                        <p class="symbol">Cd</p>
+                        <p class="number">48</p>
+                        <p class="weight">112.411</p>
+                    </div>
+                    <div class="element-item alkaline-earth metal" data-category="alkaline-earth">
+                        <h5 class="name">Calcium</h5>
+                        <p class="symbol">Ca</p>
+                        <p class="number">20</p>
+                        <p class="weight">40.078</p>
+                    </div>
+                    <div class="element-item transition metal" data-category="transition">
+                        <h5 class="name">Rhenium</h5>
+                        <p class="symbol">Re</p>
+                        <p class="number">75</p>
+                        <p class="weight">186.207</p>
+                    </div>
+                    <div class="element-item post-transition metal" data-category="post-transition">
+                        <h5 class="name">Thallium</h5>
+                        <p class="symbol">Tl</p>
+                        <p class="number">81</p>
+                        <p class="weight">204.383</p>
+                    </div>
+                    <div class="element-item metalloid" data-category="metalloid">
+                        <h5 class="name">Antimony</h5>
+                        <p class="symbol">Sb</p>
+                        <p class="number">51</p>
+                        <p class="weight">121.76</p>
+                    </div>
+                    <div class="element-item transition metal" data-category="transition">
+                        <h5 class="name">Cobalt</h5>
+                        <p class="symbol">Co</p>
+                        <p class="number">27</p>
+                        <p class="weight">58.933</p>
+                    </div>
+                    <div class="element-item lanthanoid metal inner-transition" data-category="lanthanoid">
+                        <h5 class="name">Ytterbium</h5>
+                        <p class="symbol">Yb</p>
+                        <p class="number">70</p>
+                        <p class="weight">173.054</p>
+                    </div>
+                    <div class="element-item noble-gas nonmetal" data-category="noble-gas">
+                        <h5 class="name">Argon</h5>
+                        <p class="symbol">Ar</p>
+                        <p class="number">18</p>
+                        <p class="weight">39.948</p>
+                    </div>
+                    <div class="element-item diatomic nonmetal" data-category="diatomic">
+                        <h5 class="name">Nitrogen</h5>
+                        <p class="symbol">N</p>
+                        <p class="number">7</p>
+                        <p class="weight">14.007</p>
+                    </div>
+                    <div class="element-item actinoid metal inner-transition" data-category="actinoid">
+                        <h5 class="name">Uranium</h5>
+                        <p class="symbol">U</p>
+                        <p class="number">92</p>
+                        <p class="weight">238.029</p>
+                    </div>
+                    <div class="element-item actinoid metal inner-transition" data-category="actinoid">
+                        <h5 class="name">Plutonium</h5>
+                        <p class="symbol">Pu</p>
+                        <p class="number">94</p>
+                        <p class="weight">(244)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ISOTOP END-->
+
+        <!--VERTICAL ACCORDIAN START-->
+        <h1 class="text-center text-danger mt-5">jQuery Accordian</h1>
+        <div id="accordion" class="accordion-container">
+            <h4 class="accordion-title">Title 1</h4>
+            <div class="accordion-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eos vero exercitationem nobis ducimus reprehenderit minus suscipit aut totam ratione.</p>
+            </div>
+            <h4 class="accordion-title">Title 2</h4>
+            <div class="accordion-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Delectus, nam. Ab ea et officia est eius consequuntur laudantium reprehenderit libero commodi blanditiis recusandae, beatae rem, nostrum quia eos sit. Repellat!
+                </p>
+            </div>
+            <h4 class="accordion-title">Title 3</h4>
+            <div class="accordion-content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Impedit officiis similique ab deleniti quidem, a eius nostrum quasi ratione maxime eos minima dicta reiciendis cupiditate.</p>
+            </div>
+            <h4 class="accordion-title">Title 4</h4>
+            <div class="accordion-content">
+                <p>Accordion Content 4</p>
+            </div>
+            <h4 class="accordion-title">Title 5</h4>
+            <div class="accordion-content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quam illo quod? At, quaerat, doloremque delectus ipsa unde quas fuga.</p>
+            </div>
+        </div>
+        <!--VERTICAL ACCORDIAN END-->
+
+        <!--COUNTER TIME START-->
+
+        <div class="contauner">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="text-center text-danger mt-3">jQuery Countdown</h1>
+
+                    <div class="cus_bg" style="margin: 80px auto;">
+                        <div style="width: 100%;">
+                            <div id="countdown-gampang"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--COUNTER TIME END-->
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="assets/image-lightbox/dist/cp-lightimg.min.js"></script>
+        <script src="js/script.js"></script>
+        <script>
+            $(function () {
+                $(document).on("click", "img", function () {
+                    $(this).cpLightimg();
+                });
+            });
+        </script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');
+        </script>
+        <script src="assets/isotope/js/isotope-docs.min.js"></script>
+        <script src="assets/animated-timeline/js/timeLine.js"></script>
+        <script src="assets/animated-timeline/js/scripts.js"></script>
+
+        <script>
+            jQuery(function ($) {
+                $(".accordion-content").css("display", "none");
+
+                $(".accordion-title").click(function () {
+                    $(".accordion-title").not(this).removeClass("open");
+
+                    $(".accordion-title").not(this).next().slideUp(300);
+
+                    $(this).toggleClass("open");
+
+                    $(this).next().slideToggle(300);
+                });
+            });
+        </script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "jqueryscript.net"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <script>
+            try {
+                fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" }))
+                    .then(function (response) {
+                        return true;
+                    })
+                    .catch(function (e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+
+        <!--COUNTDOWN-->
+        <script src="countdown/js/jquery.knob.min.js"></script>
+        <!-- jQuery throttle-->
+        <script src="countdown/js/jquery.ba-throttle-debounce.min.js"></script>
+
+        <!-- jQuery Countdown Gampang-->
+        <script src="countdown/js/jquery-countdowngampang.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var element = $("#countdown-gampang");
+                var finish_d = new Date();
+                finish_d.setDate(finish_d.getDate() + 10);
+                element.CountdownGampang(
+                    {
+                        rampung: finish_d,
+                        theme: "flat-colors-very-wide",
+                    },
+                    function () {
+                        // callback that is fired when the countdown reaches 0.
+                        alert("Wes Wayahe Bro :)");
+                    }
+                );
+            });
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "jqueryscript.net"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script>
+            try {
+                fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" }))
+                    .then(function (response) {
+                        return true;
+                    })
+                    .catch(function (e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+    </body>
+</html>

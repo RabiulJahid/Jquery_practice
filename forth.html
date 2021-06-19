@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>forth</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="js/jquerysctipttop.css" />
+        <link rel="stylesheet" href="css/main.css" />
+
+        <style>
+            body {
+                font-family: "Roboto Condensed";
+                background: #efefef;
+            }
+            .container {
+                margin: 150px auto;
+            }
+            .circles {
+                margin-left: 30%;
+                margin-top: -12%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--CURCLE TEXT START-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 circles">
+                    <h1 class="text-danger">jQuery Circle Text</h1>
+                    <div class="circle">rabiuljahid.com</div>
+                </div>
+            </div>
+        </div>
+
+        <!--CURCLE TEXT END-->
+
+        <!--SKILL TEST-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 circles">
+                    <h1>jQuery Simple SkillBar Plugin</h1>
+                    <div id="skill1" class="demo" data-width="80" data-background="#FFC107">JavaScript (80%)</div>
+                    <div id="skill2" class="demo" data-width="90" data-background="#FF5722">HTML5+XML (90%)</div>
+                    <div id="skill3" class="demo" data-width="70" data-background="#2196F3">CSS+CSS3 (70%)</div>
+                    <div id="skill4" class="demo" data-width="50" data-background="#F44336">AngularJS (50%)</div>
+                    <div id="skill5" class="demo" data-width="80" data-background="#3B5998">ReactJS + React Native (80%)</div>
+                </div>
+            </div>
+        </div>
+        <!--SKILL TEST-->
+
+        <!--CALENDER START-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 circles">
+                    <h1>Minimalist Navigatable Calendar</h1>
+                    <div class="hbContainer">
+                        <div class="calendarYearMonth center">
+                            <p class="left calBtn" onclick="prevMonth()">Prev</p>
+                            <p id="yearMonth">Jan 2021</p>
+                            <p class="right calBtn" onclick="nextMonth()">Next</p>
+                        </div>
+                        <div>
+                            <ol class="calendarList1">
+                                <li class="day-name">Sat</li>
+                                <li class="day-name">Sun</li>
+                                <li class="day-name">Mon</li>
+                                <li class="day-name">Tue</li>
+                                <li class="day-name">Wed</li>
+                                <li class="day-name">Thu</li>
+                                <li class="day-name">Fri</li>
+                            </ol>
+                            <ol class="calendarList2" id="calendarList"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CALENDER END-->
+
+        <script src="js/script.js"></script>
+        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/circleText.js"></script>
+        <script>
+            $(".circle").circleText({
+                glue: " ⭐ ⭐ ⭐ ",
+                turn: true,
+                padding: 20,
+                radius: 120,
+                duration: 80,
+                repeat: 2,
+                background: "#f4af1b",
+            });
+        </script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "rabiuljahid.com"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script src="js/simple-skillbar.js"></script>
+        <script>
+            $(".demo").simpleSkillbar({});
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "jqueryscript.net"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script src="js/calendar.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-36251023-1"]);
+            _gaq.push(["_setDomainName", "jqueryscript.net"]);
+            _gaq.push(["_trackPageview"]);
+
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <script>
+            try {
+                fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" }))
+                    .then(function (response) {
+                        return true;
+                    })
+                    .catch(function (e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+    </body>
+</html>
